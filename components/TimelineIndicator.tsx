@@ -56,13 +56,11 @@ export default function TimelineIndicator() {
       <motion.div
         style={{
           height: useTransform(scrollYProgress, [0, 1], ["100%", "0%"]),
-          opacity: glowOpacity
-        }}
-        className="w-1.5 h-1.5 rounded-full"
-        style={{ 
+          opacity: glowOpacity,
           backgroundColor: COLORS.accent,
           boxShadow: `0 0 10px ${COLORS.accent}`
         }}
+        className="w-1.5 h-1.5 rounded-full"
       />
 
       <motion.div
